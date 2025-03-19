@@ -1,0 +1,23 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Lain";
+}
+
+#title {
+    position: absolute;
+    color: var(--color);
+}
+
+.lain {
+    z-index: -10;
+    font-family: "Lain";
+    color: blue;
+    font-size: 3vw;
+}
