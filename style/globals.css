@@ -1,0 +1,13 @@
+body {
+    cursor: url("/cursor/cursor.cur"), auto;
+}
+
+@font-face {
+    font-family: "Lain";
+    src: url("/font/lain.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Ledlight";
+    src: url("/font/LEDLIGHT.otf") format("opentype");
+}

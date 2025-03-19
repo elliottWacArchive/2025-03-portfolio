@@ -1,0 +1,19 @@
+:root {
+    --color: #00ff72;
+}
+
+.kabnav {
+    font-family: "Ledlight";
+    background-image: url("/image/kabbale2.png");
+    height: 100vh;
+    font-size: 7vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    aspect-ratio: 797/1564;
+}
+
+.node {
+    color: var(--color);
+}
