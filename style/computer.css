@@ -1,0 +1,21 @@
+.computer-container {
+    width: 20%;
+    aspect-ratio: 493/497;
+    overflow: hidden;
+}
+
+.screen {
+    margin-top: -92%;
+    margin-left: 12%;
+    background-color: #d000ff;
+    width: 76%;
+    height: 55.75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skin {
+    height: 100%;
+}
