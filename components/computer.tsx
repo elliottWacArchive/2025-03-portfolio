@@ -11,7 +11,7 @@ const Computer: React.FC = () => {
     };
 
     return (
-        <div className="computer-container" onClick={handleClick}>
+        <div id="computer" className="computer-container" onClick={handleClick}>
             <img className="skin" src="/image/computer.png" alt="" />
             <img
                 src={`/image/computer/${gifIndex}.gif`}

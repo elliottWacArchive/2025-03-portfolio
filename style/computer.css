@@ -1,7 +1,8 @@
-.computer-container {
-    width: 20%;
+#computer {
+    width: 15vw;
     aspect-ratio: 493/497;
     overflow: hidden;
+    position: absolute;
 }
 
 .screen {
