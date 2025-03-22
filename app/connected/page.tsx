@@ -9,23 +9,16 @@ export default function Connected() {
     useEffect(() => {
         // audio
         const audio = new Audio("/audio/connected.mp3");
+        const connected = document.getElementById("connected");
         const playAudio = () => {
             audio.play();
-            document.removeEventListener("click", playAudio);
-        };
-        document.addEventListener("click", playAudio);
-
-        // title distortion
-        const titleElement = document.getElementById("title");
-        const distortTitle = () => {
-            if (titleElement) {
-                const skewX = Math.random() * 120 - 60;
-                const skewY = Math.random() * 120 - 60;
-                const scale = Math.random() * 0.5 + 0.5;
-                titleElement.style.transform = `skew(${skewX}deg, ${skewY}deg) scale(${scale})`;
+            if (connected) {
+                connected.removeEventListener("click", playAudio);
             }
         };
-        const distortionInterval = setInterval(distortTitle, 500);
+        if (connected) {
+            connected.addEventListener("click", playAudio);
+        }
 
         // lain text
         const interval = setInterval(() => {
@@ -74,7 +67,6 @@ export default function Connected() {
 
         return () => {
             clearInterval(interval);
-            clearInterval(distortionInterval);
             clearInterval(computerInterval);
         };
     }, []);
@@ -83,12 +75,10 @@ export default function Connected() {
         <>
             {lains}
             <div id="title">
-                Everyone
-                <br />
-                Is
-                <br />
-                Always <br />
-                Connnected.
+                If Donnie has had access to the Internet, nothing makes him any
+                less concerned by the rules that govern this 'digital' world.
+                <div id="connected">Everyone is Always Connected.</div>
+                To accept this is to accept reality.
             </div>
             <Computer />
         </>
