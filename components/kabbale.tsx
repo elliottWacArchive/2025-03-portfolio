@@ -6,7 +6,9 @@ const kabnav = () => {
             <div className="node">
                 <a href="/connected">Connected</a>
             </div>
-            <div className="node">Chokhmah</div>
+            <div className="node">
+                <a href="/panel">Panel</a>
+            </div>
             <div className="node">Binah</div>
             <div className="node">Chesed</div>
             <div className="node">Geburah</div>
