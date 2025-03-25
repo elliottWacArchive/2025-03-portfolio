@@ -18,11 +18,18 @@ body {
 }
 
 .nav-element {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
     padding: 2%;
+    border: var(--color) 2px solid;
+    color: var(--color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-element:hover {
-    background-color: #ccc;
+    background-color: var(--color);
     color: black;
 }
 
