@@ -12,21 +12,19 @@ export async function POST(req: Request) {
     }
 
     try {
-        // Configurer le transporteur Nodemailer
         const transporter = nodemailer.createTransport({
             service: "gmail",
             auth: {
-                user: "elliott.rametgrout@gmail.com", // Remplacez par votre email
-                pass: "flny onkk vkoh msgs", // Remplacez par votre mot de passe ou app password
+                user: "elliott.rametgrout@gmail.com",
+                pass: "flny onkk vkoh msgs",
             },
         });
 
-        // Configurer le contenu de l'email
         await transporter.sendMail({
-            from: email,
-            to: "elliott.rametgrout@gmail.com", // Votre adresse email
+            from: `"Formulaire de Contact" <${email}>`,
+            to: "elliott.rametgrout@gmail.com",
             subject: "Nouveau message depuis le formulaire de contact",
-            text: message,
+            text: `Message de ${email}:\n\n${message}`,
         });
 
         return NextResponse.json({ success: true });
