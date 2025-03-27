@@ -2,5 +2,7 @@
     "name": "whoisdonnie",
     "title": "Who Is Donnie",
     "description": "A website that showcases the life and work of Donnie.",
-    "link": "https://whoisdonnie.net"
+    "link": "https://whoisdonnie.net",
+    "a": "whoisdonnie.net",
+    "img": "donnie.png"
 }

@@ -11,6 +11,7 @@ const ProjectPage = () => {
         title: string;
         description: string;
         link: string;
+        a: string;
         img: string;
     } | null>(null);
 
@@ -28,6 +29,7 @@ const ProjectPage = () => {
                     title: "Erreur",
                     description: "Impossible de charger les infos du projet.",
                     link: "/",
+                    a: "/",
                     img: "/loading2.gif",
                 })
             );
@@ -36,20 +38,25 @@ const ProjectPage = () => {
     return (
         <div className="project">
             <h1>{project ? project.title : "Chargement..."}</h1>
-            <p>{project ? project.description : "..."}</p>
             <a href={project ? project.link : "/"}>
-                {project ? project.link : "/"}
+                {project ? project.a : "Chargement..."}
             </a>
-            <Image
-                src={
-                    project
-                        ? "/project/" + proj + "/" + project.img
-                        : "/loading2.gif"
-                }
-                width={100}
-                height={100}
-                alt="Loading"
-            />
+            <div className="content-container">
+                {" "}
+                <p>{project ? project.description : "..."}</p>
+                <div className="img-container">
+                    <Image
+                        src={
+                            project
+                                ? "/project/" + proj + "/" + project.img
+                                : "/loading2.gif"
+                        }
+                        width={100}
+                        height={100}
+                        alt="Loading"
+                    />
+                </div>
+            </div>
         </div>
     );
 };

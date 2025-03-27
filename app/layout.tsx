@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "I Am Donnie",
-    description: "La reponse a toute question",
+    title: "Where Is Donnie",
+    description: "Where is Donnie? Frank Was Here.",
     icons: {
         icon: "/image/favicon.png",
     },

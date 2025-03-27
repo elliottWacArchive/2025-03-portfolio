@@ -24,11 +24,13 @@ body {
     border: var(--color) 2px solid;
     color: var(--color);
     display: flex;
+    font-family: "PERSONAL";
     align-items: center;
     justify-content: center;
 }
 
 .nav-element:hover {
+    z-index: 100;
     background-color: var(--color);
     color: black;
 }
