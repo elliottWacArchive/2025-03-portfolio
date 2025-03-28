@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import "./style.css";
+import Image from "next/image";
 
 export default function ContactPage() {
     const [email, setEmail] = useState("");
@@ -33,31 +35,41 @@ export default function ContactPage() {
     };
 
     return (
-        <div>
-            <h1>Contactez-moi</h1>
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="email">Votre email :</label>
-                    <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                </div>
-                <div>
-                    <label htmlFor="message">Votre message :</label>
-                    <textarea
-                        id="message"
-                        value={message}
-                        onChange={(e) => setMessage(e.target.value)}
-                        required
-                    />
-                </div>
-                <button type="submit">Envoyer</button>
-            </form>
-            {status && <p>{status}</p>}
-        </div>
+        <>
+            <Image
+                className="dog"
+                src={"/oeil.gif"}
+                alt="Loading"
+                width={100}
+                height={100}
+            />
+            ‡{" "}
+            <div className="contact">
+                <h1>Contactez-moi</h1>
+                <form onSubmit={handleSubmit}>
+                    <div>
+                        <label htmlFor="email">Votre email :</label>
+                        <input
+                            type="email"
+                            id="email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div>
+                        <label htmlFor="message">Votre message :</label>
+                        <textarea
+                            id="message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+                {status && <p>{status}</p>}
+            </div>
+        </>
     );
 }
