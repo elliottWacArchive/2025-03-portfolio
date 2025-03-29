@@ -9,8 +9,12 @@ const kabnav = () => {
             <div className="node">
                 <a href="/panel">Panel</a>
             </div>
-            <div className="node">Binah</div>
-            <div className="node">Chesed</div>
+            <div className="node">
+                <a href="/contact">Contact</a>
+            </div>
+            <div className="node">
+                <a href="/information">Information</a>
+            </div>
             <div className="node">Geburah</div>
             <div className="node">Tiphareth</div>
             <div className="node">Netzach</div>

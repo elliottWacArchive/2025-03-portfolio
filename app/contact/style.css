@@ -16,6 +16,12 @@ body {
     gap: 1%;
 }
 
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+    }
+}
+
 input,
 textarea,
 button {
@@ -30,8 +36,8 @@ button {
 img {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100vw;
+    right: -10%;
+    width: 40vw;
     height: auto;
     z-index: -1;
 }
@@ -40,4 +46,9 @@ button:hover {
     background-color: var(--color);
     color: black;
     cursor: url("/cursor/focus.cur"), auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
 }

@@ -43,7 +43,6 @@ export default function ContactPage() {
                 width={100}
                 height={100}
             />
-            ‡{" "}
             <div className="contact">
                 <h1>Contactez-moi</h1>
                 <form onSubmit={handleSubmit}>
