@@ -1,0 +1,15 @@
+#mikuPowered {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+    aspect-ratio: 231/81;
+}
+
+#miku {
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: -200px;
+    transition: left 15s linear;
+}

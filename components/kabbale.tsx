@@ -15,7 +15,9 @@ const kabnav = () => {
             <div className="node">
                 <a href="/information">Information</a>
             </div>
-            <div className="node">Geburah</div>
+            <div className="node">
+                <a href="/miku">Miku</a>
+            </div>
             <div className="node">Tiphareth</div>
             <div className="node">Netzach</div>
             <div className="node">Hod</div>
