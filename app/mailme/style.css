@@ -1,0 +1,54 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Blue screen";
+}
+
+.contact {
+    border: 1px solid var(--color);
+    padding: 3%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+@media (max-width: 768px) {
+    .contact {
+        width: 90%;
+    }
+}
+
+input,
+textarea,
+button {
+    font-family: "Blue screen";
+    outline: none;
+    color: var(--color);
+    border: 1px solid var(--color);
+    background-color: var(--background);
+    cursor: url("/cursor/cursor.cur"), auto;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    right: -10%;
+    width: 40vw;
+    height: auto;
+    z-index: -1;
+}
+
+button:hover {
+    background-color: var(--color);
+    color: black;
+    cursor: url("/cursor/focus.cur"), auto;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
