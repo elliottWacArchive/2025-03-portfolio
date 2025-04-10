@@ -13,12 +13,14 @@ const kabnav = () => {
                 <a href="/contact">Contact</a>
             </div>
             <div className="node">
-                <a href="/information">Information</a>
+                <a href="/mailme">Mail Me</a>
             </div>
             <div className="node">
                 <a href="/miku">Miku</a>
             </div>
-            <div className="node">Tiphareth</div>
+            <div className="node">
+                <a href="/whoami">who am i</a>
+            </div>
             <div className="node">Netzach</div>
             <div className="node">Hod</div>
             <div className="node">Yesod</div>

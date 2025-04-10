@@ -1,0 +1,16 @@
+#card {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    border: var(--color) solid 1px;
+}
+
+#card .head {
+    display: flex;
+    justify-content: space-between;
+}
+
+#card img {
+    max-width: 100%;
+}
