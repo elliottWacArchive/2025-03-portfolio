@@ -24,7 +24,7 @@ body {
     border: var(--color) 2px solid;
     color: var(--color);
     display: flex;
-    font-family: "PERSONAL";
+    font-family: "boba-mono", "PERSONAL";
     align-items: center;
     justify-content: center;
 }
