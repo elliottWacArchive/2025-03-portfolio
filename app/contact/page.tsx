@@ -1,74 +1,37 @@
 "use client";
 
-import { useState } from "react";
-import "./style.css";
-import Image from "next/image";
+import React, { useState } from "react";
+import "./page.css";
 
-export default function ContactPage() {
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-    const [status, setStatus] = useState("");
-
-    const handleSubmit = async (e: React.FormEvent) => {
-        e.preventDefault();
-        setStatus("Envoi en cours...");
-
-        try {
-            const res = await fetch("/api/send-email", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ email, message }),
-            });
-
-            if (res.ok) {
-                setStatus("Email envoyé avec succès !");
-                setEmail("");
-                setMessage("");
-            } else {
-                setStatus("Erreur lors de l'envoi de l'email.");
-            }
-        } catch (error) {
-            setStatus("Erreur lors de l'envoi de l'email.");
-        }
-    };
-
+const Page = () => {
     return (
-        <>
-            <Image
-                className="dog"
-                src={"/oeil.gif"}
-                alt="Loading"
-                width={100}
-                height={100}
-            />
+        <div>
             <div className="contact">
-                <h1>Contactez-moi</h1>
-                <form onSubmit={handleSubmit}>
-                    <div>
-                        <label htmlFor="email">Votre email :</label>
-                        <input
-                            type="email"
-                            id="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label htmlFor="message">Votre message :</label>
-                        <textarea
-                            id="message"
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
-                            required
-                        />
-                    </div>
-                    <button type="submit">Envoyer</button>
-                </form>
-                {status && <p>{status}</p>}
+                <img src="/image/icon/cv.min.svg" alt="" />
+                <a href="./CV_Elliott_RAMET-GROUT.pdf">CV</a>
             </div>
-        </>
+            <div className="contact">
+                <img src="/image/icon/instagram.min.svg" alt="" />
+                <a href="">Instagram</a>
+            </div>
+            <div className="contact">
+                <img src="/image/icon/linkedin.min.svg" alt="" />
+                <a href="">LinkedIn</a>
+            </div>
+            <div className="contact">
+                <img src="/image/icon/github.min.svg" alt="" />
+                <a href="">GitHub</a>
+            </div>
+            <div className="contact">
+                <img src="/image/icon/twitter.min.svg" alt="" />
+                <a href="">Twitter</a>
+            </div>
+            <div className="contact">
+                <img src="/image/icon/discord.min.svg" alt="" />
+                <a href="">Discord</a>
+            </div>
+        </div>
     );
-}
+};
+
+export default Page;

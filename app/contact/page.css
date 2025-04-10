@@ -1,0 +1,16 @@
+.contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.contact img {
+    width: 1em;
+}
+
+a:hover {
+    background-color: var(--color);
+    color: black;
+    fill: black;
+}
