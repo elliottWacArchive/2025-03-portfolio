@@ -4,13 +4,32 @@ body {
     font-family: Arial, sans-serif;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
     font-family: "Blue screen", sans-serif;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.num {
+    font-family: "PERSONAL", sans-serif;
+}
+
+a:hover {
+    background-color: var(--color);
+    color: black;
+    text-decoration: underline;
 }
 
 h1 {
     font-family: "boba-mono", sans-serif;
     font-size: 4vw;
+    padding: 0;
+    margin: 0;
+}
+
+.iconTitle {
+    height: 2vw;
 }
 
 p {
@@ -22,6 +41,13 @@ p {
     flex-direction: column;
     width: 100%;
     height: 100%;
+    gap: 5px;
+}
+
+.inline {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     gap: 5px;
 }
 
@@ -59,6 +85,9 @@ p {
 }
 
 #controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     border: 1px solid var(--color);
@@ -74,5 +103,9 @@ p {
     }
     p {
         font-size: 4vw;
+    }
+
+    .iconTitle {
+        height: 4vw;
     }
 }
