@@ -1,5 +1,6 @@
 {
     "name": "mytwitter",
     "title": "Pillzer",
-    "description": "wait..."
+    "description": "Un projet d'école en groupe qui devait reproduire le fonctionnement de Twitter. Pillzer est orienté médical, une place libre où les usagers peuvent parler de leurs problèmes de santé et trouver des conseils ou du soutient. Le site a été réalisé avec Express et Prisma.",
+    "img": "image.png"
 }

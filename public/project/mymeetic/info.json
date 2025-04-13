@@ -1,5 +1,6 @@
 {
     "name": "mymeetic",
     "title": "My Vocaloid",
-    "description": "wait..."
+    "description": "Un projet de développement : reproduire le comportement du site meetic. Le site MyVocaloid est une forme de meetic satirique cherchant a dénoncer les relations parasociales.",
+    "img": "image.png"
 }

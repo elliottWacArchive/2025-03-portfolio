@@ -4,7 +4,7 @@ const kabnav = () => {
     return (
         <div className="kabnav">
             <div className="node">
-                <a href="/connected">Connected</a>
+                <a href="/whoami">who am i</a>
             </div>
             <div className="node">
                 <a href="/panel">Panel</a>
@@ -19,12 +19,8 @@ const kabnav = () => {
                 <a href="/miku">Miku</a>
             </div>
             <div className="node">
-                <a href="/whoami">who am i</a>
+                <a href="/connected">Connected</a>
             </div>
-            <div className="node">Netzach</div>
-            <div className="node">Hod</div>
-            <div className="node">Yesod</div>
-            <div className="node">Malkhut</div>
         </div>
     );
 };

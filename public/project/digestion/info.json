@@ -1,8 +1,8 @@
 {
     "name": "digestion",
     "title": "Digestion",
-    "description": "A simple css's framework in flexbox logic",
+    "description": "Un framework minimaliste en Sass. Il permet de gérer le skelette d'un site de manière flex. Il a servi au projet Pillzer.",
     "img": "sass.png",
-    "a": "digestion.com",
+    "a": "depôt github",
     "link": "https://github.com/gloubiboulgaah/digestion.git"
 }
