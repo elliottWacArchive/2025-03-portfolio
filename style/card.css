@@ -1,15 +1,11 @@
 #card {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     border: var(--color) solid 1px;
-    aspect-ratio: 3/4;
+    /* aspect-ratio: 3/4; */
     background-color: black;
-}
-
-#card .head {
-    display: flex;
-    justify-content: space-between;
 }
 
 #card img {
