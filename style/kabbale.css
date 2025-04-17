@@ -1,8 +1,15 @@
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
 .kabnav {
     font-family: "Ledlight";
     background-image: url("/image/kabbale2.png");
     height: 100vh;
-    font-size: 7vh;
+    font-size: 3vh;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -17,9 +24,65 @@ a {
 
 .node {
     color: var(--color);
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.inlinenode {
+    color: var(--color);
+}
+
+.line {
+    padding: 0 0 0 3vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 37%;
 }
 
 .node:hover {
     color: var(--hover);
     cursor: url("/cursor/hover.cur"), auto;
+}
+
+.inlinenode:hover {
+    color: var(--hover);
+    cursor: url("/cursor/hover.cur"), auto;
+}
+
+.node:nth-child(1) {
+    top: 7%;
+    left: 50%;
+}
+
+.node:nth-child(2) {
+    top: 21%;
+    left: 50%;
+}
+
+/* .node:nth-child(2) {
+    top: 21%;
+    left: 40%;
+}
+
+.node:nth-child(3) {
+    top: 21%;
+    left: 60%;
+} */
+
+.node:nth-child(3) {
+    top: 56%;
+    left: 50%;
+}
+
+.node:nth-child(4) {
+    /* "Miku" - Yesod (Fondation) */
+    top: 76%;
+    left: 50%;
+}
+
+.node:nth-child(5) {
+    /* "Connected" - Malkuth (Royaume) */
+    top: 93%;
+    left: 50%;
 }
