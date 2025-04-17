@@ -28,6 +28,12 @@ export default function RootLayout({
     return (
         <html lang="fr">
             <body className={`${geistSans.variable} ${geistMono.variable}`}>
+                <audio
+                    src="/ambient.mp3"
+                    autoPlay
+                    loop
+                    style={{ display: "none" }}
+                />
                 {children}
             </body>
         </html>
